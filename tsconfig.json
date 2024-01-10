@@ -1,0 +1,70 @@
+{
+  "compilerOptions": {
+    // * ---------------------------------------------------------------------------------------------------------------------------- * //
+    // * ------------------------------------------------------  TS COMPILER  ------------------------------------------------------- * //
+    // * ---------------------------------------------------------------------------------------------------------------------------- * //
+    "target": "es6",                           // * Specify ECMAScript target version: 'ES3' (default), ... , or 'ESNEXT'.
+    "module": "CommonJS",                      // * Specify module code generation.
+    "outDir": "./build",                       // * Redirect output structure to the directory.
+    "allowJs": true,                           // * Allow JavaScript files to be compiled.
+    "checkJs": true,                           // * Report errors in .js files.
+    "rootDir": ".",                            // * Folders whose combined content represents the structure of the project at runtime.
+    "removeComments": true,                    // * Do not emit comments to output.
+    "noEmitOnError": true,                     // * Will "break the build" like a traditional statically typed language
+    "importHelpers": true,                     // * Import emit helpers from 'tslib'.
+    "isolatedModules": true,                   // * Transpile each file as a separate module (similar to 'ts.transpileModule').
+    "esModuleInterop": true,                   // * Emit additional JavaScript to ease support for importing CommonJS modules.
+    "forceConsistentCasingInFileNames": true,  // * Ensure that casing is correct in imports.
+    "pretty": true,                            // * Stylize errors and messages using color and context.
+    // "jsx": "react-jsx",                     // * Specify JSX code generation: 'preserve', 'react-native', or 'react'.
+    // "incremental": true,                    // * This creates a series of .tsbuildinfo
+    // "noEmit": true,                         // * Do not emit outputs.
+    // "resolveJsonModule": true,              // * Import module with '.json' extension.
+    "lib": ["ES6"],                            // * Specify library files to be included in the compilation.
+    // "declaration": true,                    // * Generates corresponding '.d.ts' file.
+    // "outFile": "./",                        // * Concatenate and emit output to single file.
+    
+    // * ---------------------------------------------------------------------------------------------------------------------------- * //
+    // * -----------------------------------------------------  MODULE OPTION  ------------------------------------------------------ * //
+    // * ---------------------------------------------------------------------------------------------------------------------------- * //
+    "allowSyntheticDefaultImports": true,      // * Allow default imports from modules with no default export.
+    "moduleResolution": "node",                // * Specify module resolution strategy: 'node'(Node.js) or 'classic'(TypeScript pre-1.6).
+    "types": [""],                             // * Type declaration files to be included in compilation.
+    "baseUrl": ".",                            // * Base directory to resolve non-absolute module names.
+    "paths": {                                 // * A list of entries which re-map imports to lookup locations relative to the 'baseUrl'.
+      "@config": ["src/config/index"],
+      "@utils": ["src/utils/index"],
+      "@interfaces": ["src/interfaces/index"],
+    },
+    // "typeRoots": [],                        // * List of folders to include type definitions from.
+
+    // * ---------------------------------------------------------------------------------------------------------------------------- * //
+    // * -------------------------------------------------------  TYPE SAFETY  ------------------------------------------------------ * //
+    // * ---------------------------------------------------------------------------------------------------------------------------- * //
+    "strict": true,                            // * Enable all strict type-checking options.
+    "skipLibCheck": true,                      // * Skip type checking all .d.ts files.
+    "alwaysStrict": true,                      // * Parse in strict mode and emit "use strict" for each source file.
+    "noImplicitAny": true,                     // * Raise error on expressions and declarations with an implied "any" type.
+    "noUnusedLocals": true,                    // * Report errors on unused locals.
+    "strictNullChecks": true,                  // * Enable strict null checks.
+    "noUnusedParameters": true,                // * Report errors on unused parameters.
+    "allowUnusedLabels": false,                // * Creates error if [true] with unused labels.
+    "allowUnreachableCode": false,             // * Creates error if [true] with unreachable code.
+    "noFallthroughCasesInSwitch": true,        // * Report errors for fallthrough cases in switch statement.
+    // "noImplicitReturns": true,              // * Report error when not all code paths in function return a value.
+    // "noImplicitThis": false                 // * Raise error on 'this' expressions with an implied 'any' type.
+
+    // * ---------------------------------------------------------------------------------------------------------------------------- * //
+    // * -------------------------------------------------------  SOURCE MAP  ------------------------------------------------------- * //
+    // * ---------------------------------------------------------------------------------------------------------------------------- * //
+    // "sourceMap": true,                      // * Generates corresponding '.map' file
+
+    // * ---------------------------------------------------------------------------------------------------------------------------- * //
+    // * ----------------------------------------------------------  MISC  ---------------------------------------------------------- * //
+    // * ---------------------------------------------------------------------------------------------------------------------------- * //
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+  },
+  "include": ["./src/**/*"],
+  "exclude": ["node_modules"]
+}
