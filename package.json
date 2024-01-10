@@ -1,0 +1,31 @@
+{
+  "version": "1.0.0",
+  "name": "eventme",
+  "description": "Discover the latest Events near you!",
+  "author": "Savin Raul Calin",
+  "homepage": "https://github.com/SavinRaulCalin/EventMe#readme",
+  "main": "src/server.ts",
+  "license": "ISC",
+  "scripts": {
+    "server": "nodemon",
+    "tsc": "tsc",
+    "tsc:noEmit": "tsc --noEmit",
+    "tsc:incremental": "tsc --incremental --noEmit"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/morgan": "^1.9.9",
+    "@types/node": "^20.10.8",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.0.2",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "tslib": "^2.6.2",
+    "typescript": "^5.3.3",
+    "winston": "^3.11.0"
+  }
+}
